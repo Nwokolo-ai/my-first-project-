@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosity Lab - Scientific Discovery Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🔬 <span>Curiosity</span>Lab</div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="inventions.html">Inventions</a></li>
+                <li><a href="questions.html">Brain Triggers</a></li>
+                <li><a href="notebook.html">📓 Science Notebook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 id="dynamicGreeting"></h1>
+            <p class="hero-subtitle">Where curiosity meets discovery</p>
+            
+            <div class="daily-trigger-card" id="dailyTriggerCard">
+                <div class="trigger-label">🧠 TODAY'S BRAIN TRIGGER</div>
+                <p class="trigger-question" id="dailyQuestion">Loading...</p>
+                <button class="btn-small" id="newTriggerBtn">🔄 New Trigger</button>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2 class="section-title">Explore Science</h2>
+            
+            <div class="category-grid">
+                <a href="history.html" class="category-card history">
+                    <span class="category-emoji">📜</span>
+                    <h3>Scientific History</h3>
+                    <p>Moments that changed everything</p>
+                </a>
+                
+                <a href="inventions.html" class="category-card inventions">
+                    <span class="category-emoji">💡</span>
+                    <h3>Mind-Blowing Inventions</h3>
+                    <p>Ideas that shaped our world</p>
+                </a>
+                
+                <a href="questions.html" class="category-card questions">
+                    <span class="category-emoji">🤔</span>
+                    <h3>Brain Triggers</h3>
+                    <p>Questions that make you think</p>
+                </a>
+                
+                <a href="notebook.html" class="category-card notebook">
+                    <span class="category-emoji">📓</span>
+                    <h3>Science Notebook</h3>
+                    <p>Record your observations</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="quick-stats">
+            <div class="stat-item">
+                <span class="stat-number" id="historyCount">0</span>
+                <span class="stat-label">History Moments</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="inventionCount">0</span>
+                <span class="stat-label">Inventions</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="questionCount">0</span>
+                <span class="stat-label">Brain Triggers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="notebookCount">0</span>
+                <span class="stat-label">Your Notes</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Curiosity Lab - Feed your scientific mind</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+          </html>
